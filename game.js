@@ -5,7 +5,7 @@ let userGuess = Number(prompt("Guess a number!:"));
 let result = document.getElementById("result")
 let isAlphabetic = /^[A-Za-z]+$/ 
 let i = 1 
-while(userGuess != randomNumber) {
+while(userGuess != randomNumber || userGuess == 999) {
     if (isAlphabetic.test(userGuess) == true) {
         userGuess = Number(prompt("You can't guess letters!:")); 
         i += 1 
